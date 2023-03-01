@@ -1,7 +1,7 @@
 # leveraging-llms-for-mcqa
 
 ## Setup
-* Start by using your favorite package manager to install: `openai`, `pandas`, `scipy`, `tqdm`,
+* Start by using your favorite package manager to install: `openai`, `pandas`, `pyperclip`, `scipy`, `tqdm`,
 * Now register your API keys in `api_sectrets.py`. To do this, add a key and value for each API key you want to register to the dictionary in the `get_api_key_by_name` function. You'll need an OpenAI key for OpenAI API experiments, and a Jurassic key for Jurassic API experiments. You can use the existing keys or choose your own names for the keys.
 
 ## Running Experiments
@@ -22,3 +22,6 @@ Running `main.py` will save a pickle file with experiment results.
 
 ## Analyzing Results
 To analyze the results of an experiment (from its saved pickle file) you will use `analyze.py`. The positional and optional command line arguments are the same except for you don't need to supply the name of an API key to use. These arguments will be used to look up the saved experiment pickle file.
+
+## Other Functionality
+* You can **visualize prompts** that will be used by an experiment with `viz_prompts.py`. The positional command line arguments are dataset name, style name, and number of shots (as you'd use with `main.py`). The optional argument `--longest` will show the longest prompt instead of a random one.
