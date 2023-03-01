@@ -1,7 +1,10 @@
 # leveraging-llms-for-mcqa
 
+## Overview
+This is the code for the ICLR 2023 paper "[Leveraging Large Language Models for Multiple Choice Question Answering](https://arxiv.org/abs/2210.12353)."
+
 ## Setup
-* Start by using your favorite package manager to install: `openai`, `pandas`, `pyperclip`, `scipy`, `tqdm`,
+* Start by using your favorite package manager to install `datasets`, `numpy`, `openai`, `pandas`, `scipy`, `tqdm`, and `transformers`.
 * Now register your API keys in `api_sectrets.py`. To do this, add a key and value for each API key you want to register to the dictionary in the `get_api_key_by_name` function. You'll need an OpenAI key for OpenAI API experiments, and a Jurassic key for Jurassic API experiments. You can use the existing keys or choose your own names for the keys.
 
 ## Running Experiments
@@ -25,3 +28,5 @@ To analyze the results of an experiment (from its saved pickle file) you will us
 
 ## Other Functionality
 * You can **visualize prompts** that will be used by an experiment with `viz_prompts.py`. The positional command line arguments are dataset name, style name, and number of shots (as you'd use with `main.py`). The optional argument `--longest` will show the longest prompt instead of a random one.
+* You can **add a custom model** by adding a custom key and value to a dictionary in `get_model_by_name` within `models.py`.
+* You can **add a custom dataset** by adding a custom key and value to the dictionary in `get_dataset_info` within `dataset_utils.py`.
