@@ -1,7 +1,7 @@
 # leveraging-llms-for-mcqa
 
 ## Overview
-This is the code for the ICLR 2023 paper "[Leveraging Large Language Models for Multiple Choice Question Answering](https://arxiv.org/abs/2210.12353)."
+This is the code for the ICLR 2023 paper "[Leveraging Large Language Models for Multiple Choice Question Answering](https://arxiv.org/abs/2210.12353)." It can be used to reproduce results in the paper and is designed to be extensible.
 
 ## Setup
 * Start by using your favorite package manager to install `datasets`, `numpy`, `openai`, `pandas`, `scipy`, `tqdm`, and `transformers`.
