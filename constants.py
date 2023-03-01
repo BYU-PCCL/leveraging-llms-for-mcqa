@@ -77,12 +77,7 @@ MMLU_NAMES = [
 
 HF_CACHE_DIR_NAME = "hf_cache"
 RESULTS_DIR_NAME = "results"
-SERVER_READY_DIR_NAME = "server_ready"
 
 
-for dir_name in [
-    HF_CACHE_DIR_NAME,
-    RESULTS_DIR_NAME,
-    SERVER_READY_DIR_NAME
-]:
+for dir_name in [HF_CACHE_DIR_NAME, RESULTS_DIR_NAME]:
     make_dir_if_does_not_exist(dir_name)
